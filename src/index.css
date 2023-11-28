@@ -8,10 +8,25 @@
   align-items: center;
 }
 
-div.app__container {
+.app__add-comments {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.app__add-comments-btn {
+  background-color: #FFE492;
+  border: 0;
+  outline: none;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.app__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 
 body {
