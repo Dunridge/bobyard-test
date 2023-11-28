@@ -10,8 +10,7 @@ function App() {
   const [comments, setComments] = useState<IComment[]>(commentsList.comments);
 
   useEffect(() => {
-    console.log(comments);
-  }, [comments]);
+  }, []);
 
   return (
     <div className="app">
