@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export const Comment = ({ comment }: ICommentProps) => {
     const [commentData, setCommentData] = useState(comment);
+    // TODO: (2.1) define edit/save state boolean and modify the commentData object --> OR just output and modify the state of the array directly 
 
     useEffect(() => {
         console.log('commentData', commentData);
@@ -23,6 +24,8 @@ export const Comment = ({ comment }: ICommentProps) => {
             date: dateString
         });
     }, [comment]);
+
+    
 
     return (
         <div className="comment">

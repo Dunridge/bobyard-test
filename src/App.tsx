@@ -13,6 +13,8 @@ function App() {
   useEffect(() => {
   }, []);
 
+  // (2.4) Create the model from step 2 and then handle the image upload or image saving to the assets folder and storing the path for display
+  // (2.2) Finish the method by adding a submit form for each comment 
   const handleAddComment = () => {
     // 1 - create a model for the comment
     // 2 - fill the model with data from user (...)
@@ -27,6 +29,13 @@ function App() {
     // 3 - push the new comment to the comments 
     setComments([...comments, newComment]);
   }
+
+  // (2.3) TODO: pass the handleDelete to each comment and then delete the comment from the arr
+  const handleDelete = (id: string) => {
+  }
+
+  // (3) - Add pagination: split the arr depending on the page length and display the necessary segment on each page switch
+  //                       - alternaticely use a library with virtualized pagination to render the necessary elements   
 
   return (
     <div className="app">
