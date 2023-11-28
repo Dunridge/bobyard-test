@@ -1,0 +1,13 @@
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    background-color: #043873;
+    color: white;
+    padding: 10px 40px;
+}
+
+.header__title {
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
