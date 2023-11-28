@@ -1,13 +1,27 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
+import { Comment } from './components/Comment';
+import commentsList from './data/comments.json';
+import { IComment } from './utils/interfaces/IComment';
 
 function App() {
+  const [comments, setComments] = useState<IComment[]>(commentsList.comments);
+
+  useEffect(() => {
+    console.log(comments);
+  }, [comments]);
+
   return (
     <div className="app">
-      <Header/>
-      App
-      <Footer/>
+      <Header />
+      <div className="app_container">
+        {
+          comments.map(commentData => <Comment comment={commentData} key={commentData.id} />)
+        }
+      </div>
+      <Footer />
     </div>
   );
 }
