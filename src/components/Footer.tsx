@@ -3,7 +3,7 @@ export const Footer = () => {
 
     return (
         <div className="footer">
-            Footer
+            <div className="footer__copyright">©Bobyard</div>
         </div>
     );
 }
