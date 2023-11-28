@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <div className="app_container">
+      <div className="app__container">
         {
           comments.map(commentData => <Comment comment={commentData} key={commentData.id} />)
         }
