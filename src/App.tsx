@@ -21,7 +21,7 @@ function App() {
     const text = 'This is some custom text...';
     const date = '12015-08-31';
     const likes = 6;
-    const image = '../assets/not-found.png';
+    const image = '../assets/not-found.png'; // TODO: convert to the imported image from the path 
     let newComment: IComment = new CommentModel(id, author, text, date, likes, image);
 
     // 3 - push the new comment to the comments 
